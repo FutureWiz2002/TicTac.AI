@@ -2,7 +2,6 @@ grid1 = [
     ["-", "-", "-"], 
     ["-", "-", "-"],
     ["-", "-", "-"] ]
-    
 
 # whose-turn takes in a grid and determines the player's turn. 
 
@@ -141,4 +140,4 @@ def main(grid):
             break
 
 
-main(grid1) #initializing the main function
+# main(grid1) #initializing the main function

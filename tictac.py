@@ -2,7 +2,7 @@ grid1 = [
     ["-", "-", "-"], 
     ["-", "-", "-"],
     ["-", "-", "-"] ]
-
+print(grid1)
 # whose-turn takes in a grid and determines the player's turn. 
 
 def whoseTurn(grid):
@@ -90,7 +90,7 @@ def minimax(grid, depth, Maximizing):
             for j in range(3):
                 if grid[i][j] == "-":
                     newGrid = takeInput(grid, i, j, "O")
-                    # print(newGrid)
+                    print(newGrid)
                     score, move = minimax(newGrid, depth+1, False)
                     # print(i, j, score, move)
                     if score > bestScore:
@@ -140,4 +140,4 @@ def main(grid):
             break
 
 
-# main(grid1) #initializing the main function
+main(grid1) #initializing the main function

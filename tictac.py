@@ -106,7 +106,7 @@ def minimax(grid, depth, Maximizing):
             for j in range(3):
                 if grid[i][j] == "-":
                     newGrid = takeInput(grid, i, j, "X")
-                    print(newGrid)
+                    # print(newGrid)
                     score, move = minimax(newGrid, depth+1, True)
                     # print(i, j, score, move)
                     if score < bestScore:
@@ -128,7 +128,7 @@ def main(grid):
         else:
             print("Computer is thinking...")
             score, move = minimax(grid, 0, True)
-            print(f"Computer chooses ({move[0]}, {move[1]}) with {score}")
+            # print(f"Computer chooses ({move[0]}, {move[1]}) with {score}")
             grid = takeInput(grid, move[0], move[1], turn)
         for i in range(len(grid)):
             print(grid[i])
